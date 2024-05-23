@@ -1,0 +1,115 @@
+.page-body {
+    margin-top: 130px !important;
+    /* Tăng khoảng cách trên để phù hợp với header lớn hơn */
+    padding-left: 330px !important;
+    /* Chỉnh lại để khớp với sidebar */
+    padding-right: 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 1450px;
+    /* Điều chỉnh để body chiếm hết chiều rộng còn lại */
+    min-height: calc(100vh - 80px);
+    /* Điều chỉnh để phù hợp với chiều cao header lớn hơn */
+    background-color: #f8f9fa !important;
+    box-sizing: border-box !important;
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -10px;
+}
+
+.card-column {
+    flex: 1 1 calc(25% - 20px);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-tiles {
+    transition: box-shadow 0.3s, transform 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-hover:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.custome-1-bg {
+    border-left: 4px solid #28a745 !important;
+}
+
+.custome-2-bg {
+    border-left: 4px solid #17a2b8 !important;
+}
+
+.custome-3-bg {
+    border-left: 4px solid #ffc107 !important;
+}
+
+.custome-4-bg {
+    border-left: 4px solid #dc3545 !important;
+}
+
+.card-body {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex: 1;
+}
+
+.static-top-widget {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100%;
+}
+
+.counter {
+    font-size: 24px !important;
+    font-weight: bold !important;
+}
+
+.badge {
+    margin-left: 10px !important;
+    padding: 5px 10p !important;
+    border-radius: 12px !important;
+    font-size: 12px !important;
+}
+
+.grow {
+    transition: all 0.3s;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    width: calc(100% - 300px);
+    left: 300px;
+    position: fixed;
+    bottom: 0;
+    box-sizing: border-box;
+}

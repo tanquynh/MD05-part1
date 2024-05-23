@@ -1,0 +1,139 @@
+/* Header.css */
+
+.page-header {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    width: calc(100% - 200px);
+    left: 300px;
+    position: fixed;
+    top: 0;
+  }
+  
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .search-full {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  
+  .search-full .form-group {
+    width: 50%;
+    position: relative;
+  }
+  
+  .search-full .search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+  }
+  
+  .search-full .demo-input {
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-full .close-search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .nav-menus {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-menus li {
+    margin: 0 10px;
+  }
+  
+  .notification-box {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .notification-box .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px;
+  }
+  
+  .mode, .profile-nav {
+    cursor: pointer;
+  }
+  
+  .profile-nav .profile-media {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-nav .profile-media img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .profile-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1002;
+  }
+  
+  .profile-nav:hover .profile-dropdown {
+    display: block;
+  }
+  
+  .profile-dropdown li {
+    list-style: none;
+  }
+  
+  .profile-dropdown li a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .profile-dropdown li a:hover {
+    background-color: #f4f4f4;
+  }
+  
